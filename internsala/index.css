@@ -1,0 +1,258 @@
+#container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: teal;
+    display: grid;
+    place-items: center;
+  }
+ 
+  #slider-container {
+    height: 490px;
+    width: 85vw;
+    max-width: 1400px;
+    background: #ffba3a;
+    box-shadow: 0.5px 1.2px 0.8px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+ 
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 30px;
+    width: 30px;
+    /* border-left: 8px solid rgb(2, 2, 2);
+    border-top: 8px solid rgb(0, 0, 0); */
+  }
+ 
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
+ 
+  #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+  }
+ 
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 160px;
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    top: 565px;
+    border-radius: 50%;
+ 
+  }
+ 
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 178px;
+    background-color: black;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    top: 565px;
+ 
+  }
+ 
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+  }
+ 
+  .info {
+    height: 90px;
+    width: 160px;
+    /* border: 1px solid black; */
+    background-color: rgb(240, 251, 253);
+    margin: auto;
+    margin-top: 30px;
+ 
+  }
+ 
+  .info p {
+    color: blue;
+    margin-top: -15px;
+    /* margin-left: ; */
+    /* font-size: 30px; */
+
+  }
+ 
+  .info h2 {
+    margin-top: -20px;
+    font-size: 25px;
+    align-items: center;
+    /* text-align: center; */
+    margin-left: 10px;
+  }
+ 
+  .info h5 {
+    /* margin-top: -1px; */
+    font-weight: 1000;
+    font-size: 18px;
+    padding-top: 4px;
+  }
+ 
+  .fa {
+    margin-top: 4px;
+    position: absolute;
+    font-size: 18px;
+    margin-left: -12px;
+ 
+ 
+  }
+ 
+  .content {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+  }
+ 
+  /* .small-box{
+          background-color: white;
+          margin: auto;
+          width: 100%;
+          height: 450px;
+          text-align: center;
+      } */
+  .small-box h4 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 21px;
+  }
+ 
+  .small-box button {
+    border: none;
+    color: blue;
+    margin-top: 15px;
+    background-color: white;
+  }
+ 
+  #slider-container #slider .slide {
+    height: 500px;
+    margin: auto 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: -5px;
+  }
+ 
+  #slider-container #slider .slide span {
+    color: black;
+    /* font-size: 150px; */
+ 
+  }
+ 
+  @media only screen and (min-width: 1100px) {
+ 
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+ 
+ 
+    }
+ 
+  }
+ 
+  @media only screen and (max-width: 1100px) {
+ 
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 20px);
+ 
+    }
+ 
+  }
+ 
+  @media only screen and (max-width: 900px) {
+ 
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+ 
+  }
+ 
+  @media only screen and (max-width: 550px) {
+ 
+    #slider-container #slider .slide {
+      width: calc(9% - -15px);
+      height: 510px;
+    }
+ 
+    #slider-container {
+      height: 550px;
+      width: 85vw;
+      max-width: 1400px;
+      background: #ffba3a;
+    }
+ 
+    .info {
+      height: 80px;
+      width: 160px;
+      /* border: 1px solid black; */
+      background-color: rgb(210, 242, 248);
+      margin: auto;
+      margin-top: 30px;
+ 
+    }
+ 
+    .info p {
+      color: blue;
+      margin-top: -15px;
+      /* margin-left: ; */
+    }
+ 
+    .info h2 {
+      margin-top: -20px;
+      font-size: 25px;
+      align-items: center;
+      /* text-align: center; */
+      margin-left: 10px;
+    }
+ 
+    .info h5 {
+      margin-top: -1px;
+      font-weight: 1000;
+      font-size: 15px;
+      padding-top: 4px;
+    }
+ 
+    .fa {
+      margin-top: 4px;
+      position: absolute;
+      font-size: 18px;
+      margin-left: -12px;
+ 
+ 
+    }
+ 
+    .content {
+      width: 80%;
+      margin: auto;
+      margin-top: 60px;
+      text-align: left;
+    }
+ 
+    .small-box h4 {
+      width: 30%;
+      margin: auto;
+      text-align: center;
+      margin-top: 10px;
+    }
+ 
+    .small-box button {
+      border: none;
+      color: blue;
+      margin-top: 40px;
+      background-color: white;
+      padding-bottom: 10px;
+    }
+  }
